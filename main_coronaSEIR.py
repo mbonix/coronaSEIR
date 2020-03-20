@@ -27,9 +27,9 @@ E0 = 1  # exposed at initial time step
 
 days = 165  # total days to model
 
-dataOffset = 25 # how many days will the real world country data be delayed in the model
+dataOffset = 27 # how many days will the real world country data be delayed in the model
 
-days0 = dataOffset + 35  # days before lockdown measures
+days0 = dataOffset + 35 # days before lockdown measures
 
 beta0 = 1.0 / 2.5  # The parameter controlling how often a susceptible-infected contact results in a new infection.
 beta1 = beta0 / 4  # beta0 is used during days0 phase, beta1 after days0
@@ -52,7 +52,7 @@ symptomToHospitalLag = 5
 
 icuRate = 0.02
 infectionFatalityRateA = 0.01
-infectionFatalityRateB = infectionFatalityRateA * 2  # higher lethality without ICU - by how much?
+infectionFatalityRateB = infectionFatalityRateA * 4  # higher lethality without ICU - by how much?
 
 r0 = beta0 / gamma  # somehow an r0 of 3.0 seems to low
 r1 = beta1 / gamma
